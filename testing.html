@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Liaison Committee</title>
+    <meta name="author" content="Joel Varghese">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" type="image/favicon" href="images/favicon.ico"/>
+  </head>
+   
+  
+  <body>
+    
+    <header class="title-container">
+        <a href="index.html">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <h1>Staff/Student Liaison Committee</h1>
+    </header>
+    
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="whoweare.html">About Us</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="meetings.html">Meetings</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    
+    <main>
+        <div class="main-content">
+      
+            <h2>Optimisation</h2>
+                <p class="body-text">
+                    Using large, high-quality images noticeably slowed down the loading time of
+                    my website. This effect would be worse on devices with slower internet connections.
+                    To mitigate this I used images with a smaller file size (about 400kb). These still
+                    looked good and the loading time is imperceptable.
+                </p>
+
+            <h2>Debugging</h2>
+                <p class="body-text">
+                    I used the following HTML and CSS validators to check my code:
+                </p>
+                
+                <ul class="format-list">
+                    <li><a href="https://validator.w3.org">https://validator.w3.org</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator">https://jigsaw.w3.org/css-validator</a></li>
+                </ul>
+
+                <p class="body-text">
+                    These helped me make my code more efficient by removing unnecessary white space which can sometimes
+                    cause <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace">formatting issues</a>.
+                    They also suggested I replace ID's that were used multiple time with classes instead. Using ID's multiple
+                    times does not cause errors in the browser as they are lenient and can workaround this, but it is bad practise.
+                </p>
+
+            <h2>Browser Testing</h2>
+                <p class="body-text">
+                    I tested my website on three different browsers using their built in emulation tools: Google Chrome (v119),
+                    Microsoft Edge (v119), Firefox (v119). There was no difference in the formatting between all three browsers.
+                    The only difference I noticed was that Firefox displayed my website more saturated (which I tested with a colour picker)
+                    which is due to a current bug in this Firefox version. However this has absolutely no impact on using the website.
+                </p>
+
+                <div class="testing-images-container">
+
+                    <figure>
+                        <img class="format-image" src="images/website-edge.png" alt="website running on edge">
+                        <figcaption>Fig 4. Website running on Edge</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="format-image" src="images/website-chrome.png" alt="website running on chrome">
+                        <figcaption>Fig 5. Website running on Chrome</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="format-image" src="images/website-firefox.png" alt="website running on firefox">
+                        <figcaption>Fig 6. Website running on Firefox</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="format-image" src="images/website-mobile.png" alt="website running on mobile">
+                        <figcaption>Fig 7. Website running on a phone</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="format-image" src="images/website-ipad.png" alt="website running on ipad">
+                        <figcaption>Fig 8. Website running on an iPad</figcaption>
+                    </figure>
+
+
+                </div>
+
+            <h2>Accessibility</h2>
+                <div class="image-container" id="wave-report-container">
+                    <figure>
+                        <img class="format-image" src="images/wave-report.png" alt="website sitemap">
+                        <figcaption>Fig 9. Wave Report</figcaption>
+                    </figure>
+                
+                    <p class="body-text">
+                        After running the Wave Report tool on my website, the only recommended action I had to take was to incorporate
+                        lang="en" in the html tag, so screenreaders and other accessibility tools can recognise the language of my
+                        webpage. I have tested that my website can be easily navigated using only the keyboard (tab key) for those
+                        who cannot use a mouse, and a visible keyboard focus indicator is automatically applied by browsers for accessibility.
+                        All the elements on the 'Contact' form have labels so they can be understood by screenreaders. 
+                    </p>
+                
+                </div>
+
+        </div>
+      
+      
+        <div id="scrolltop">
+            <p><a href="#top">Back To Top</a></p>
+        </div>
+      
+    </main>
+    
+
+    <footer>
+  
+        <ul>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="legal.html">Legal and Security</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="testing.html">Testing</a></li>
+        </ul>
+        
+        <p>&copy; 2023 Joel Varghese. All rights reserved.</p>
+      
+    </footer>
+  
+
+  </body>
+
+</html>

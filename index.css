@@ -1,0 +1,366 @@
+* { /* resetting default values to 0 to avoid sizing issues */
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right ,purple,rgb(225, 158, 169));
+}
+
+.body-text {
+    margin-bottom: 1.5rem;
+}
+
+main ul li {
+    margin-bottom: 0.6rem;
+
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.format-image {
+    width:100%; /* image scales to take the maximum width of the page */
+    max-width: 600px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto; /* centres image horizontally */
+    margin-bottom: 1rem;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+  
+.main-content {
+    margin: 0.4rem;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.format-list {
+    padding: 0 0 1.5rem 2rem;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    background-image: linear-gradient(to right ,purple,rgb(225, 158, 169));
+    color: #fff;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 0.8rem;
+}
+
+nav {
+    background-color: #d2d2d2;
+    border-bottom:  2px #333 solid;
+    position: sticky; /* nav bar stays at top even when scrolling down */
+    top: 0;
+    z-index: 1; /* nav bar should always be at the top */
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* no wrap and overflow-x auto will make it so when the screen is narrow the nav bar turns into a horizontal scroll bar */
+}
+  
+nav li {
+    flex-shrink: 0;
+    list-style: none;
+    padding: 1rem 0 1rem 0;
+}
+  
+nav a {
+    padding: 1rem;
+    color: #333;
+    text-decoration: none;
+}
+  
+nav li:hover, nav li:hover a { /* hover effects for the nav bar buttons */
+    color: #fff;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.current-page-button, .current-page-button a{ /* turns the current page button black to make it identifiable */
+    background-color: #333;
+    color: #fff;
+}
+
+
+#scrolltop {
+    background-color: #d2d2d2;
+    text-align: center;
+    padding: 0.9rem
+
+}
+
+  
+#scrolltop a {
+    text-decoration: none;
+    color:#333;
+}
+
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+footer a {
+    color:#fff;
+}
+
+.contact-form-page { /* this is the container for the contact form elements */
+    display: flex;
+    flex-direction: column;
+    margin: 0.4rem;
+
+}
+
+#contact-list {
+    list-style: none;
+}
+
+input,textarea { /* decorating the form input boxes */
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 7px; 
+    margin-bottom: 17px;
+    resize: vertical; /* allows user to vertically resize textarea */
+    box-shadow: 1px 1px 1px;
+}
+
+textarea {
+    height: 300px;
+}
+
+button {
+    background-color: rgb(19, 151, 19); /* styling submit button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #226e26;
+    transition: all 0.3s ease;
+}
+
+.contact-form {
+    border-radius: 0px 0px 10px 10px;
+    background-color: #f2f2f2;
+    padding: 1rem;
+}
+
+.contact-details{
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+    padding: 1rem;
+}
+
+.contact-detail-text {
+    margin-top: 2rem;
+}
+
+.quiz-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: #333333 1px solid;
+}
+
+#quiz-box-3 {
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.quiz-answers {
+    list-style: none;
+
+}
+
+.quiz-answer {
+    margin: 1rem auto;
+    background-color: #d2d2d2;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+#wrong-answer:hover {
+    transform: scale(1.03);
+    background-color: rgb(191, 111, 111);
+    transition: all 0.3s ease;
+
+}
+
+#correct-answer:hover {
+    transform: scale(1.03);
+    background-color: rgb(111, 191, 143);
+    transition: all 0.3s ease;
+  
+}
+
+.quiz-image {
+    width:100%; 
+    max-width: 600px;
+    border-radius: 10px;
+    display: block; /* allows image to be centred */
+    margin: 0 auto; /* horizontally centres image */
+    margin-bottom: 2rem;
+    box-shadow: 6px 6px;
+}
+
+#mockup-image-1, #mockup-image-2 {
+  margin: 2rem auto;
+}
+
+figcaption {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) { /*reorders mainly the header and contact form elements when screen is wider*/
+    
+  .title-container {
+      flex-direction: row;
+      justify-content: left;
+      text-align: center;
+    
+  }
+
+  .title-container h1 {
+      margin: auto;
+  }
+
+  header img {
+      margin-bottom: 0;
+  }
+
+  .contact-form-page {
+      flex-direction: row;
+  }
+
+  .contact-form {
+      border-radius: 0px 10px 10px 0px;
+  }
+    
+  .contact-details{
+      border-radius: 10px 0px 0px 10px;
+  }
+
+  .main-content, .contact-form-page {
+      margin: 1rem;
+  }
+
+  #wave-report-container {
+    flex-direction: row;
+  }
+
+  #wave-report-container p{
+    margin-left: 1rem;
+  }
+  
+}
+
+
+@media screen and (min-width: 1000px) { /*reorders mainly the quiz page when screen is wide*/
+
+  #welcome-container {
+      flex-direction: row-reverse;
+  }
+
+  #welcome-container p {
+      margin: auto;
+      padding-right: 1rem;
+  }
+
+  #quiz-box-1, #quiz-box-3 {
+      flex-direction: row;
+  }
+
+  #quiz-box-2 {
+      flex-direction: row-reverse;
+  }
+
+  #quiz-box-3 {
+      margin-bottom: 3rem;
+  }
+
+  .quiz-box {
+      justify-content: center;
+      padding-bottom: 2rem;
+  }
+
+  .quiz-image {
+      margin: 0
+  }
+
+  #quiz-image-1, #quiz-image-3 {
+      margin: 0 2rem 0 0;
+  }
+
+  #quiz-image-2 {
+      margin: 0 0 0 2rem;
+  }
+
+  .image-container {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+  }
+
+  #mockup-image-1, #mockup-image-2 {
+      object-fit: contain; /* the image will not leave the container at small sizes */
+      max-width: 400px;
+  }
+
+    
+}
